@@ -1,10 +1,12 @@
-import React from "react";
+import { useState } from "react";
 import Logo from "../assets/img/logo.svg";
 import LinkList from "./LinkList";
 import GetStartButton from "./GetStartButton.jsx";
 
 function Navbar() {
   const links = ["Pricing", "Products", "About", "Careers", "Community"];
+  const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen);
 
   return (
     <nav className="relative container mx-auto p-6">
@@ -24,7 +26,10 @@ function Navbar() {
         <GetStartButton hidden={true} />
         <button
           id="menu-btn"
-          className="block hamburger md:hidden focus:outline-none"
+          className={`${
+            isOpen ? "open" : ""
+          } block hamburger md:hidden focus:outline-none`}
+          onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="hamburger-top"></span>
           <span className="hamburger-mid"></span>
@@ -36,7 +41,9 @@ function Navbar() {
       <div className="md:hidden">
         <div
           id="menu"
-          className="hidden absolute flex flex-col items-center self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-7 right-6 drop-shadow md"
+          className={`${
+            !isOpen ? "hidden" : ""
+          } absolute flex flex-col items-center py-8 mt-10 space-y-6 font-bold bg-white left-7 right-7 drop-shadow-md`}
         >
           <a href="">Pricing</a>
           <a href="">Product</a>
