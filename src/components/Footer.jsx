@@ -8,6 +8,9 @@ function Footer() {
   return (
     <footer className="bg-veryDarkBlue" id="footer">
       <div className="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+        <div className="mx-auto my-6 text-center text-white md:hidden">
+          Copyright &copy; 2022, All Rights Reserved
+        </div>
         {/* Logo & Social Links */}
         <div className="flex flex-col-reverse items-center gap-3 md:gap-3 space-y-8 md:flex-col md:space-y-0 md:items-start">
           {/* Image Container */}
@@ -34,34 +37,35 @@ function Footer() {
           </div>
         </div>
         {/* List Container */}
-
-        <div className="flex justify-around space-x-32">
-          <div className="flex flex-col space-y-3 text-white">
-            <a href="" className="hover:text-brightRed">
-              Home
-            </a>
-            <a href="" className="hover:text-brightRed">
-              Pricing
-            </a>
-            <a href="" className="hover:text-brightRed">
-              About
-            </a>
-            <a href="" className="hover:text-brightRed">
-              Products
-            </a>
+        <div className="flex justify-evenly">
+          <div className="flex justify-around space-x-32">
+            <div className="flex flex-col space-y-3 text-white">
+              <a href="" className="hover:text-brightRed">
+                Home
+              </a>
+              <a href="" className="hover:text-brightRed">
+                Pricing
+              </a>
+              <a href="" className="hover:text-brightRed">
+                About
+              </a>
+              <a href="" className="hover:text-brightRed">
+                Products
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-around space-x-32">
-          <div className="flex flex-col space-y-3 text-white">
-            <a href="" className="hover:text-brightRed">
-              Careers
-            </a>
-            <a href="" className="hover:text-brightRed">
-              Community
-            </a>
-            <a href="" className="hover:text-brightRed">
-              Privacy Policy
-            </a>
+          <div className="flex justify-around space-x-32">
+            <div className="flex flex-col space-y-3 text-white">
+              <a href="" className="hover:text-brightRed">
+                Careers
+              </a>
+              <a href="" className="hover:text-brightRed">
+                Community
+              </a>
+              <a href="" className="hover:text-brightRed">
+                Privacy Policy
+              </a>
+            </div>
           </div>
         </div>
 
@@ -79,6 +83,9 @@ function Footer() {
               </button>
             </div>
           </form>
+          <div className="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
         </div>
       </div>
     </footer>
