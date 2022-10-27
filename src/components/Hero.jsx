@@ -1,3 +1,5 @@
+import GetStartButton from "./GetStartButton";
+
 const Hero = () => {
   return (
     <section id="hero">
@@ -7,10 +9,13 @@ const Hero = () => {
           <h1 className="max-w-sm text-4xl font-bold text-center md:text-4xl md:text-left">
             Bring everyone together to build better products
           </h1>
-          <p className="max-w-[50%] text-center text-darkGrayishBlue md:text-left">
+          <p className="max-w-sm text-center text-darkGrayishBlue md:text-left">
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
+          <div className="flex justify-center md:justify-start">
+            <GetStartButton hidden={false} />
+          </div>
         </div>
       </div>
     </section>

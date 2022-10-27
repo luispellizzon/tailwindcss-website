@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/img/logo.svg";
 import LinkList from "./LinkList";
+import GetStartButton from "./GetStartButton.jsx";
 
 function Navbar() {
   const links = ["Pricing", "Products", "About", "Careers", "Community"];
@@ -20,12 +21,7 @@ function Navbar() {
           ))}
         </div>
         {/* Button */}
-        <a
-          href=""
-          className="hidden md:block p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight "
-        >
-          Get Started
-        </a>
+        <GetStartButton hidden={true} />
       </div>
     </nav>
   );
