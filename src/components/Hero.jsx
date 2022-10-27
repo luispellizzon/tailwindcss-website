@@ -16,7 +16,7 @@ const Hero = () => {
             while keeping the larger team goals in view.
           </p>
           <div className="flex justify-center md:justify-start">
-            <GetStartButton hidden={false} />
+            <GetStartButton />
           </div>
         </div>
         {/* Right Container with Imgs */}

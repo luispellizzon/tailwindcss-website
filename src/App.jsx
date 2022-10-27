@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeatureSection from "./components/FeatureSection";
 import Testimonials from "./components/Testimonials";
+import CallToAction from "./components/CallToAction";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <FeatureSection />
       <Testimonials />
+      <CallToAction />
     </>
   );
 }

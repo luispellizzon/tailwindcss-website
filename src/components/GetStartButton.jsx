@@ -1,4 +1,4 @@
-function GetStartButton({ hidden }) {
+function GetStartButton({ hidden = false }) {
   return (
     <a
       href=""
