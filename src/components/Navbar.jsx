@@ -19,6 +19,13 @@ function Navbar() {
             <LinkList key={index} link={link} />
           ))}
         </div>
+        {/* Button */}
+        <a
+          href=""
+          className="hidden md:block p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight "
+        >
+          Get Started
+        </a>
       </div>
     </nav>
   );
