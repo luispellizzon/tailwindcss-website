@@ -4,8 +4,8 @@ function GetStartButton({ hidden }) {
       href=""
       className={
         hidden
-          ? "hidden md:block p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
-          : "md:block p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
+          ? "hidden p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight md:block "
+          : "p-3 px-6 text-white bg-brightRed rounded-full hover:bg-brightRedLight"
       }
     >
       Get Started
