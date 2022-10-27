@@ -7,7 +7,7 @@ function Testimonials() {
     <section id="testimonials">
       <div className="max-w-6xl px-5 mx-auto mt-32 text-center">
         <h2 className="text-4xl font-bold">What Our Customers Say </h2>
-        <div className="flex flex-col mt-24 md:flex-row md:space-x-6">
+        <div className="container flex flex-col mx-auto mt-24 md:flex-row md:space-x-6">
           {/* Testimonial */}
           <div className="flex flex-col items-center p-6 space-y-6 rounded-lg bg-brightRedSupLight relative md:w-1/3">
             <img src={Person1} alt="" className="absolute w-16 -top-8" />
